@@ -1,6 +1,8 @@
 // import { FaLocationArrow } from "react-icons/fa6";
 
 // import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
+import MagicButton from "./MagicButton";
 import { TypewriterEffect } from "./TypewriterEffect";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -98,13 +100,13 @@ const Hero = () => {
             className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
           />
 
-          {/* <a href="#about">
+          <a href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a> */}
+          </a>
         </div>
       </div>
     </div>
