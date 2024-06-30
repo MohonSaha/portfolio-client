@@ -6,6 +6,7 @@ import MagicButton from "./MagicButton";
 import { TypewriterEffect } from "./TypewriterEffect";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { GlobeDemo } from "./ui/GridGlobe";
 
 const Hero = () => {
   const words = [
@@ -74,6 +75,10 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
+
+      {/* <div className="relative top-0 ">
+        <GlobeDemo />
+      </div> */}
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">

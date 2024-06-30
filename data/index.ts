@@ -1,3 +1,27 @@
+import { AiFillHtml5 } from "react-icons/ai";
+import {
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoMongodb,
+  BiLogoPostgresql,
+  BiLogoReact,
+  BiLogoRedux,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+} from "react-icons/bi";
+import { BsGit } from "react-icons/bs";
+import { GrNode } from "react-icons/gr";
+import {
+  SiExpress,
+  SiFramer,
+  SiGreensock,
+  SiMongoose,
+  SiPrisma,
+  SiDocker,
+  SiNginx,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -13,17 +37,60 @@ export const gridItems = [
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 ",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-4 lg:min-h-[6vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
+    frontend: [],
+    // frontend: [
+    //   {
+    //     name: "HTML",
+    //     icon: AiFillHtml5,
+    //   },
+    //   {
+    //     name: "CSS",
+    //     icon: BiLogoCss3,
+    //   },
+    //   {
+    //     name: "Tailwind CSS",
+    //     icon: BiLogoTailwindCss,
+    //   },
+    //   {
+    //     name: "JavaScript",
+    //     icon: BiLogoJavascript,
+    //   },
+    //   {
+    //     name: "TypeScript",
+    //     icon: BiLogoTypescript,
+    //   },
+    //   {
+    //     name: "React.js",
+    //     icon: BiLogoReact,
+    //   },
+    //   {
+    //     name: "Redux.js",
+    //     icon: BiLogoRedux,
+    //   },
+    //   {
+    //     name: "Next.js",
+    //     icon: TbBrandNextjs,
+    //   },
+    //   {
+    //     name: "GSAP",
+    //     icon: SiGreensock,
+    //   },
+    //   {
+    //     name: "Framer Motion",
+    //     icon: SiFramer,
+    //   },
+    // ],
   },
   {
     id: 2,
     title: "I'm very flexible with time zone communications",
     description: "",
-    className: "lg:col-span-2 md:col-span-3",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
