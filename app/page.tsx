@@ -16,7 +16,6 @@ const Home = () => {
         <Grid />
         <RecentProject />
         <Testimonials />
-        {/* <RecentBlogs /> */}
         <MyBlogs />
       </div>
     </main>
