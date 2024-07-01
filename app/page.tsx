@@ -1,4 +1,5 @@
-import Grid from "@/components/Grid";
+import { ContantMe } from "@/components/ContactMe";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MyBlogs from "@/components/MyBlogs";
 import MySkills from "@/components/MySkills";
@@ -15,10 +16,11 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <RecentProject />
-        {/* <Grid /> */}
         <MySkills />
         <Testimonials />
         <MyBlogs />
+        <ContantMe />
+        <Footer />
       </div>
     </main>
   );
