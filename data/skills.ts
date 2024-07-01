@@ -56,14 +56,6 @@ export const data = {
       name: "Next.js",
       icon: TbBrandNextjs,
     },
-    {
-      name: "GSAP",
-      icon: SiGreensock,
-    },
-    {
-      name: "Framer Motion",
-      icon: SiFramer,
-    },
   ],
   backend: [
     {
@@ -93,14 +85,6 @@ export const data = {
     {
       name: "Git",
       icon: BsGit,
-    },
-    {
-      name: "Docker",
-      icon: SiDocker,
-    },
-    {
-      name: "NGINX",
-      icon: SiNginx,
     },
   ],
 };
