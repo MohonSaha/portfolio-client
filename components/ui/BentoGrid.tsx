@@ -1,14 +1,40 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
+import React from "react";
+import { useState } from "react";
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradiantBg";
-import { ReactNode, useState } from "react";
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import MagicButton from "../MagicButton";
 import animationData from "@/data/confetti.json";
 import { IoCopyOutline } from "react-icons/io5";
+
+import { AiFillHtml5 } from "react-icons/ai";
+import {
+  BiLogoCss3,
+  BiLogoTailwindCss,
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoReact,
+  BiLogoRedux,
+} from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiGreensock, SiFramer } from "react-icons/si";
+
+const iconMap = {
+  AiFillHtml5,
+  BiLogoCss3,
+  BiLogoTailwindCss,
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoReact,
+  BiLogoRedux,
+  TbBrandNextjs,
+  SiGreensock,
+  SiFramer,
+};
 
 export const BentoGrid = ({
   className,
@@ -84,14 +110,56 @@ export const BentoGridItem = ({
             )}
           />
         )}
+
+        {id === 1 && (
+          <div className="flex gap-1 lg:gap-5 flex-wrap">
+            {frontend &&
+              frontend.map((skill: any, index: any) => {
+                const IconComponent = iconMap[skill.icon];
+                return (
+                  <div key={index + skill.name} className="overflow-hidden">
+                    <div className="flex cursor-pointer flex-col items-center gap-1.5 rounded-xl border py-2 px-10 transition duration-300 ease-in-out hover:border-alt hover:bg-alt dark:border-white/[0.1]">
+                      <span className="text-white">
+                        <IconComponent size={32} />
+                      </span>
+                      <p className="whitespace-nowrap">{skill.name}</p>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+        )}
+
         {id === 6 && <BackgroundGradientAnimation />}
-        {spareImg && (
+
+        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
+          {/* {spareImg && (
           <img
             src={spareImg}
             alt={spareImg}
             className="object-cover object-center w-full h-full opacity-80"
           />
-        )}
+        )} */}
+
+          {/* <div className="font-sans text-lg lg:text-2xl max-w-96 font-bold z-50">
+            <p>For</p>
+          </div> */}
+
+          {/* {frontend &&
+            frontend.map((skill: any, index: any) => {
+              const IconComponent = iconMap[skill.icon];
+              return (
+                <div key={index + skill.name} className="overflow-hidden">
+                  <div className="flex cursor-pointer flex-col items-center gap-1.5 rounded-xl border p-2 transition duration-300 ease-in-out hover:border-alt hover:bg-alt">
+                    <span className="text-white">
+                      <IconComponent size={32} />
+                    </span>
+                    <p className="whitespace-nowrap">{skill.name}</p>
+                  </div>
+                </div>
+              );
+            })} */}
+        </div>
       </div>
 
       <div
@@ -104,7 +172,7 @@ export const BentoGridItem = ({
           {description}
         </div>
 
-        <div className={`font-sans text-lg lg:text-2xl max-w-96 font-bold`}>
+        <div className="font-sans text-lg lg:text-2xl max-w-96 font-bold z-50">
           {title}
         </div>
 

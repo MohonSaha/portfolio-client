@@ -1,6 +1,7 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import MyBlogs from "@/components/MyBlogs";
+import MySkills from "@/components/MySkills";
 import RecentBlogs from "@/components/RecentBlogs";
 import RecentProject from "@/components/RecentProject";
 import Testimonials from "@/components/Testimonials";
@@ -14,7 +15,8 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <RecentProject />
-        <Grid />
+        {/* <Grid /> */}
+        <MySkills />
         <Testimonials />
         <MyBlogs />
       </div>
