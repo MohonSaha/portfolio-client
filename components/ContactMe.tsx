@@ -7,12 +7,17 @@ import {
   FaPhoneAlt,
   FaClock,
 } from "react-icons/fa";
+import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 export function ContantMe() {
   return (
-    <div className="py-16 h-[40rem] rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
+    <div
+      className="py-16 h-[40rem] rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased"
+      id="contact"
+    >
       <div className="w-full mx-auto  relative h-full">
-        <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+        <h1 className="relative z-10 heading  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
           Contact with me
         </h1>
         <p></p>
@@ -81,12 +86,20 @@ export function ContantMe() {
                 className=" border border-gray-700 rounded-lg p-2 w-full h-32 focus:outline-none focus:border-gray bg-transparent"
                 required
               ></textarea>
-              <button
+              {/* <button
                 type="submit"
                 className="bg-blue-600 hover:bg-blue-700 rounded-lg p-2 w-full"
               >
                 SEND MESSAGE
-              </button>
+              </button> */}
+
+              {
+                <MagicButton
+                  title="SEND MESSAGE"
+                  icon={<FaLocationArrow />}
+                  position="right"
+                />
+              }
             </form>
           </div>
         </div>

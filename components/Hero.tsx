@@ -43,10 +43,6 @@ const Hero = () => {
 
   return (
     <div className="pb-20 pt-36">
-      {/**
-       *  UI: Spotlights
-       *  Link: https://ui.aceternity.com/components/spotlight
-       */}
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -76,7 +72,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* <div className="relative top-0 ">
+      {/* <div className="relative top-0 -bottom-16">
         <GlobeDemo />
       </div> */}
 
@@ -93,7 +89,7 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[20px] md:text-4xl lg:text-5xl"
           />
 
           {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">

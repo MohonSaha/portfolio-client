@@ -24,7 +24,7 @@ const MySkills = () => {
         <span className="text-purple">excellence</span>
       </h1>
 
-      <div className="grid mt-12 grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto">
+      <div className="grid mt-12 grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto ">
         <div
           className=" text-white p-4 rounded lg:col-span-3 md:col-span-3"
           style={{
@@ -56,7 +56,7 @@ const MySkills = () => {
         </div>
 
         <div
-          className=" text-white p-4 flex flex-col lg:col-span-2 md:col-span-3 relative overflow-hidden rounded-2xl"
+          className=" text-white p-4 flex flex-col lg:col-span-2 md:col-span-3 relative overflow-hidden rounded-2xl border border-white-100/[0.2]"
           style={{
             background: "rgb(4,7,29)",
             backgroundColor:
@@ -78,7 +78,7 @@ const MySkills = () => {
         </div>
 
         <div
-          className="text-white p-4 rounded-2xl lg:col-span-2 md:col-span-3 overflow-hidden  relative"
+          className="text-white p-4 rounded-2xl lg:col-span-2 md:col-span-3 overflow-hidden  relative border border-white-100/[0.2]"
           style={{
             background: "none",
           }}

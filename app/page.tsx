@@ -5,6 +5,7 @@ import MyBlogs from "@/components/MyBlogs";
 import MySkills from "@/components/MySkills";
 import RecentBlogs from "@/components/RecentBlogs";
 import RecentProject from "@/components/RecentProject";
+import { Test } from "@/components/Test";
 import Testimonials from "@/components/Testimonials";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
@@ -17,6 +18,7 @@ const Home = () => {
         <Hero />
         <RecentProject />
         <MySkills />
+        <Test />
         <Testimonials />
         <MyBlogs />
         <ContantMe />
