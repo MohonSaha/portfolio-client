@@ -7,6 +7,7 @@ import { TypewriterEffect } from "./TypewriterEffect";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { GlobeDemo } from "./ui/GridGlobe";
+import { RiFolderDownloadFill } from "react-icons/ri";
 
 const Hero = () => {
   const words = [
@@ -101,13 +102,25 @@ const Hero = () => {
             className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
           />
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex gap-5 jus">
+            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-lg border dark:border-white/[0.1] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium dark:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-5 text-sm relative bg-black-100">
+              <span>My Resume</span>
+              <span className="ml-3">
+                <RiFolderDownloadFill />
+              </span>
+              <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+            </button>
+
+            {/* <button className="inline-flex animate-shimmer items-center justify-center rounded-lg border dark:border-white/[0.1] bg-[linear-gradient(110deg,#020617,45%,#2B3749,55%,#020617)]  px-6 font-medium dark:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-5 text-sm relative bg-slate-950 h-12"></button> */}
+
+            <a href="#about">
+              <MagicButton
+                title="Show My Works"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
